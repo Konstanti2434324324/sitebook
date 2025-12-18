@@ -1,8 +1,9 @@
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse, HttpResponseNotFound, Http404, HttpResponseRedirect
-from django.shortcuts import render, redirect
-from django.urls import reverse
-from django.template.loader import render_to_string
+from django.http import HttpResponse, HttpResponseNotFound
+from django.shortcuts import render
+
+
+
 
 menu = [{'title': 'О сайте', 'url_name': 'about'},
         {'title': 'Добавить статью', 'url_name': 'add_page'},
